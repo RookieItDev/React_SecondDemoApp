@@ -6,8 +6,9 @@ const CountterState = () => {
   return (
     <View style={[styles.center,{top:100}]}>
        <Button onPress={() =>{setCount(count-1)}}
-      title="- Counter Up"
+      title="- Counter Down"
       />
+       <Text></Text>
       <Text style={{fontSize:30}}>Your Clicked {count} times</Text>
       <Text></Text>
       <Button onPress={() =>{setCount(count+1)}}

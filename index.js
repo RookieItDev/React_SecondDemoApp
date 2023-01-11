@@ -10,8 +10,9 @@ import CountterState from './screens/CountterState';
 import CoulmnItems from './screens/CoulmnItems';
 import RowsItems from './screens/RowsItems';
 import Alertcomponent from './screens/Alertcomponent';
+import TextInputDemo from './screens/TextInputDemo';
 
 
 
 // ให้หน้า CountterState เป็น Index
-AppRegistry.registerComponent(appName, () => Alertcomponent);
+AppRegistry.registerComponent(appName, () => TextInputDemo);

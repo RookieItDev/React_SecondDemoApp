@@ -16,6 +16,7 @@ const ImageDemo = () => {
         <Image style={styles.img} resizeMode={'cover'} source={require('../assets/images/Tel.jpg')} />
         <Image style={styles.img} resizeMode={'cover'} source={require('../assets/images/Thorne.jpg')} />
         <Image style={styles.img} resizeMode={'cover'} source={require('../assets/images/Violet.png')} />
+        <Image style={styles.img} resizeMode={'cover'} source={{uri:'https://cdn.oneesports.co.th/cdn-data/sites/3/2022/09/teeri-rov.jpeg'}} />
       </View>
     </View>
   );
@@ -29,6 +30,7 @@ const styles = StyleSheet.create({
     marginTop: 30,
     marginLeft: 10,
     marginRight: 10,
+    marginBottom:30,
     flexDirection: 'row',
     flexWrap:'wrap',
     justifyContent:'space-evenly'
@@ -40,7 +42,7 @@ const styles = StyleSheet.create({
   img:{
     width:140,
     height:140,
-    padding:5,
+    marginBottom:10,
     // borderWidth:1,
     // borderColor:'red'
   }

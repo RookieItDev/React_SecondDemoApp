@@ -4,6 +4,7 @@
 
 import {AppRegistry} from 'react-native';
 import App from './App';
+import AppOld from './App_old';
 import Greeting from './screens/Greeting';
 import {name as appName} from './app.json';
 import CountterState from './screens/CountterState';
@@ -16,4 +17,4 @@ import ImageDemo from './screens/ImageDemo'
 
 
 // ให้หน้า CountterState เป็น Index
-AppRegistry.registerComponent(appName, () => ImageDemo);
+AppRegistry.registerComponent(appName, () => App);

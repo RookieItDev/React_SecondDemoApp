@@ -1,20 +1,21 @@
-// rnfe
-// ถ้าไม่ Auto import ให้ลงส่วนเสริม Auto import  auto import es7
+import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-// {} เป็นการ import components
-import {View, Text , StyleSheet} from 'react-native'
-import Mycomponent from './components/Mycomponent'
-import styles from './themes/Style'
+import {NavigationContainer} from '@react-navigation/native'
+import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import Home from './screens/Home'
 
-// สร้างชื่อ Function ให้เป็นชื่อเดียวกับชื่อไฟล์ 
+const Stack = createNativeStackNavigator()
+
 const App = () => {
-  // => airo function 
-// () เป็นไม่รับ parameter ใดๆเข้ามา
-return <View>
-  {/*Mycomponent Call มาจาก Mycomponent.js */}
-  <Mycomponent/>
-  <Text style={styles.boxr}>Hello World1</Text>
-  <Text style={styles.boxg}>Hello World2</Text>
-  </View>
+  return (
+  <NavigationContainer>
+    <Stack.Navigator>
+      <Stack.Screen name="Home" component={Home}/>
+    </Stack.Navigator>
+  </NavigationContainer>
+  )
 }
+
 export default App
+
+const styles = StyleSheet.create({})

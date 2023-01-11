@@ -13,7 +13,7 @@ const RowsItems = () => {
        items.map((item, i)=>{
          return (
            <View style={[styles.items]} key={i}>
-             <Text >{item}</Text>
+             <Text style={{textAlign:'center',color:'lime'}} >{item}</Text>
            </View>
          )
        })
@@ -31,11 +31,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap:'wrap',
     padding:22,
+    
    
   },
   items:{
     justifyContent:'center',
-    backgroundColor:'lightgray',
+    backgroundColor:'black',
     height:100,
     width:100,
     padding:10,

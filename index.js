@@ -12,8 +12,8 @@ import RowsItems from './screens/RowsItems';
 import Alertcomponent from './screens/Alertcomponent';
 import TextInputDemo from './screens/TextInputDemo';
 import SwitchDemo from './screens/SwitchDemo';
-
+import ImageDemo from './screens/ImageDemo'
 
 
 // ให้หน้า CountterState เป็น Index
-AppRegistry.registerComponent(appName, () => SwitchDemo);
+AppRegistry.registerComponent(appName, () => ImageDemo);
